@@ -49,6 +49,25 @@ Uso:
 
 ## 3º filtro* !(arp or icmp or dns)
 
+Teoria:
+
+Protocolo ARP:
+- Address Resolution Protocol (ARP) é usado para mapear endereços IP para endereços MAC (Media Access Control) em redes locais.
+Protocolo ICMP:
+- Internet Control Message Protocol (ICMP) é utilizado para enviar mensagens de erro e operações de diagnóstico (como ping) entre dispositivos de rede.
+
+Funcionamento:
+
+ARP:
+- Solicitação ARP: Um dispositivo solicita o endereço MAC correspondente a um endereço IP.
+- Resposta ARP: O dispositivo com o endereço IP correspondente responde com seu endereço MAC.
+ICMP:
+- Echo Request/Reply: Utilizado para verificar a conectividade (ping).
+- Mensagens de Erro: Indicando problemas de roteamento ou entrega de pacotes.
+
+Uso:
+- Esse filtro é usado para excluir pacotes ARP, ICMP e DNS, permitindo a análise de outros tipos de tráfego na rede.
+
 ## 4º filtro* 
 
 ## 5º filtro* 

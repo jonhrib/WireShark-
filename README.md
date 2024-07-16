@@ -1,6 +1,6 @@
 # WireShark: 6 filtros para aplicação no aplicativo
 
-## 1º filtro tcp.analysis.flags
+## 1º filtro: tcp.analysis.flags
 
 Teoria - 
 Protocolo TCP:
@@ -20,7 +20,7 @@ Flags TCP:  Os flags são bits de controle no cabeçalho TCP que indicam o estad
 Uso:
 - Esse filtro é utilizado para identificar pacotes TCP que têm flags específicos definidos, indicando eventos ou estados importantes na comunicação TCP, como retransmissões, pacotes fora de ordem, e outros problemas ou condições especiais.
 
-## 2º filtro* dns or http
+## 2º filtro: dns or http
 
 Teoria:
 
@@ -47,7 +47,7 @@ Uso:
 - Esse filtro é usado para exibir apenas os pacotes DNS e HTTP na captura, facilitando a análise do tráfego de navegação web e resolução de nomes de domínio.
 
 
-## 3º filtro* !(arp or icmp or dns)
+## 3º filtro: !(arp or icmp or dns)
 
 Teoria:
 
@@ -68,11 +68,11 @@ ICMP:
 Uso:
 - Esse filtro é usado para excluir pacotes ARP, ICMP e DNS, permitindo a análise de outros tipos de tráfego na rede.
 
-## 4º filtro* 
+## 4º filtro:
 
-## 5º filtro* 
+## 5º filtro:
 
-## 6º filtro* 
+## 6º filtro:
 
 1. https://nmap.org/download.html
 

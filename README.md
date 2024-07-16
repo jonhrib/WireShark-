@@ -1,4 +1,4 @@
-# WireShark: 6 filtros para aplicação no aplicativo :shark
+# WireShark: 6 filtros para aplicação no aplicativo :shark:
 
 ## 1º filtro: tcp.analysis.flags
 

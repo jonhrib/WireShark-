@@ -15,6 +15,8 @@ Flags TCP:  Os flags são bits de controle no cabeçalho TCP que indicam o estad
 - PSH: Indica que os dados devem ser empurrados imediatamente ao aplicativo.
 - URG: Indica dados urgentes.
 
+Uso:
+- Esse filtro é utilizado para identificar pacotes TCP que têm flags específicos definidos, indicando eventos ou estados importantes na comunicação TCP, como retransmissões, pacotes fora de ordem, e outros problemas ou condições especiais.
 
 ### 2º filtro* dns or http
 

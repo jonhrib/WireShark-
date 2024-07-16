@@ -87,6 +87,9 @@ Uso:
 
 ## 6º filtro:
 
+nmap 127.0.0.1 ou nmap localhost
+mc -l 1001 (para abrir a porta 1001)
+
 1. https://nmap.org/download.html
 
 2. https://get-site-ip.com

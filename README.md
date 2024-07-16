@@ -8,7 +8,7 @@ Protocolo TCP:
 - TCP utiliza um mecanismo de controle de fluxo e de erro para garantir que os dados sejam entregues corretamente.
 - TCP estabelece uma conexão através do processo conhecido como "three-way handshake" e termina a conexão de forma ordenada.
 
-Funcionamento:
+Funcionamento -
 Flags TCP:  Os flags são bits de controle no cabeçalho TCP que indicam o estado ou o propósito de um pacote TCP.
 - SYN: Sinaliza o início de uma conexão.
 - ACK: Confirma o recebimento de pacotes.

@@ -85,7 +85,7 @@ Uso:
 
 ## 5º filtro:
 
-## 6º filtro:
+## 6º filtro: ip.addr==127.0.0.1 e abertura de portas
 
 nmap 127.0.0.1 ou nmap localhost
 

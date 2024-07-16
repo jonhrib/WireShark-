@@ -88,7 +88,9 @@ Uso:
 ## 6º filtro:
 
 nmap 127.0.0.1 ou nmap localhost
-mc -l 1001 (para abrir a porta 1001)
+
+ncat -l 1001 (para abrir a porta 1001)
+ncat 127.0.0.1 1001 (para fechar a porta)
 
 1. https://nmap.org/download.html
 

@@ -22,6 +22,16 @@ Uso:
 
 ### 2º filtro* dns or http
 
+Teoria - 
+
+Protocolo DNS:
+- Domain Name System (DNS) é responsável pela resolução de nomes de domínio para endereços IP.
+- As consultas DNS transformam nomes de domínio amigáveis (como www.exemplo.com) em endereços IP necessários para o roteamento de rede.
+
+Protocolo HTTP:
+- HyperText Transfer Protocol (HTTP) é utilizado para comunicação entre navegadores web e servidores.
+- Funciona no modelo de requisição e resposta, onde o cliente faz uma requisição e o servidor responde com os dados solicitados.
+
 ### 3º filtro* !(arp or icmp or dns)
 
 ### 4º filtro* 

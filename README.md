@@ -82,8 +82,7 @@ Uso:
 
 - O filtro tcp.analysis.retransmission é uma ferramenta poderosa no Wireshark para identificar e analisar retransmissões de pacotes TCP. Compreender o funcionamento do protocolo TCP e a importância das retransmissões ajuda a diagnosticar problemas de rede, melhorar o desempenho e garantir a segurança da rede.
 
-
-## 5º filtro:
+## 5º filtro: frame contains "attachment" or frame contains "pdf"
 
 ## 6º filtro: ip.addr==127.0.0.1 (abertura e visualização de portas)
 
@@ -97,3 +96,5 @@ ncat 127.0.0.1 1001 (para fechar a porta)
 2. https://get-site-ip.com
 
 3. https://www.youtube.com/watch?v=KrNWKxLk5No
+
+## paiKlebiº filtro: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦

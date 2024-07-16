@@ -2,6 +2,20 @@
 
 ### 1º filtro tcp.analysis.flags
 
+Protocolo TCP:
+- Transmission Control Protocol (TCP) é um protocolo de transporte confiável que garante a entrega ordenada de pacotes de dados entre um remetente e um destinatário.
+- TCP utiliza um mecanismo de controle de fluxo e de erro para garantir que os dados sejam entregues corretamente.
+- TCP estabelece uma conexão através do processo conhecido como "three-way handshake" e termina a conexão de forma ordenada.
+
+Flags TCP:  Os flags são bits de controle no cabeçalho TCP que indicam o estado ou o propósito de um pacote TCP.
+- SYN: Sinaliza o início de uma conexão.
+- ACK: Confirma o recebimento de pacotes.
+- FIN: Sinaliza o término de uma conexão.
+- RST: Reinicia a conexão.
+- PSH: Indica que os dados devem ser empurrados imediatamente ao aplicativo.
+- URG: Indica dados urgentes.
+
+
 ### 2º filtro* dns or http
 
 ### 3º filtro* !(arp or icmp or dns)

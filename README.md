@@ -2,7 +2,7 @@
 
 ### 1º filtro tcp.analysis.flags
 
-Teoria:
+Teoria - 
 Protocolo TCP:
 - Transmission Control Protocol (TCP) é um protocolo de transporte confiável que garante a entrega ordenada de pacotes de dados entre um remetente e um destinatário.
 - TCP utiliza um mecanismo de controle de fluxo e de erro para garantir que os dados sejam entregues corretamente.

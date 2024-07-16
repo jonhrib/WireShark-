@@ -80,7 +80,7 @@ Funcionamento:
 
 Uso:
 
-- O filtro tcp.analysis.retransmission é uma ferramenta poderosa no Wireshark para identificar e analisar retransmissões de pacotes TCP. Compreender o funcionamento do protocolo TCP e a importância das retransmissões ajuda a diagnosticar problemas de rede, melhorar o desempenho e garantir a segurança da rede. Na apresentação, a execução prática deste filtro será demonstrada ao vivo, permitindo uma compreensão clara e prática de como este filtro pode ser utilizado em diferentes cenários.
+- O filtro tcp.analysis.retransmission é uma ferramenta poderosa no Wireshark para identificar e analisar retransmissões de pacotes TCP. Compreender o funcionamento do protocolo TCP e a importância das retransmissões ajuda a diagnosticar problemas de rede, melhorar o desempenho e garantir a segurança da rede.
 
 
 ## 5º filtro:

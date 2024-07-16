@@ -22,7 +22,7 @@ Uso:
 
 ### 2º filtro* dns or http
 
-Teoria - 
+Teoria:
 
 Protocolo DNS:
 - Domain Name System (DNS) é responsável pela resolução de nomes de domínio para endereços IP.
@@ -31,6 +31,21 @@ Protocolo DNS:
 Protocolo HTTP:
 - HyperText Transfer Protocol (HTTP) é utilizado para comunicação entre navegadores web e servidores.
 - Funciona no modelo de requisição e resposta, onde o cliente faz uma requisição e o servidor responde com os dados solicitados.
+
+Funcionamento:
+
+DNS:
+- Consulta: Um cliente envia uma consulta DNS para resolver um nome de domínio.
+- Resposta: O servidor DNS responde com o endereço IP correspondente.
+
+HTTP:
+- Requisição: O cliente envia uma requisição HTTP (GET, POST, etc.).
+- Resposta: O servidor responde com o conteúdo solicitado (página web, dados, etc.).
+
+Uso:
+
+- Esse filtro é usado para exibir apenas os pacotes DNS e HTTP na captura, facilitando a análise do tráfego de navegação web e resolução de nomes de domínio.
+
 
 ### 3º filtro* !(arp or icmp or dns)
 

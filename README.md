@@ -68,7 +68,20 @@ ICMP:
 Uso:
 - Esse filtro é usado para excluir pacotes ARP, ICMP e DNS, permitindo a análise de outros tipos de tráfego na rede.
 
-## 4º filtro:
+## 4º filtro: tcp.analysis.retransmission
+
+Teoria:
+
+Funcionamento:
+
+- O TCP é um protocolo de transporte confiável que garante a entrega de dados na ordem correta. Para fazer isso, ele usa um mecanismo de confirmação (ACK) para garantir que os pacotes foram recebidos corretamente.
+- Quando um pacote é enviado, o remetente aguarda um ACK do destinatário. Se o ACK não for recebido dentro de um tempo especificado (timeout), o remetente presume que o pacote foi perdido ou corrompido e retransmite o pacote.
+- Wireshark identifica essas retransmissões usando o filtro tcp.analysis.retransmission.
+
+Uso:
+
+- O filtro tcp.analysis.retransmission é uma ferramenta poderosa no Wireshark para identificar e analisar retransmissões de pacotes TCP. Compreender o funcionamento do protocolo TCP e a importância das retransmissões ajuda a diagnosticar problemas de rede, melhorar o desempenho e garantir a segurança da rede. Na apresentação, a execução prática deste filtro será demonstrada ao vivo, permitindo uma compreensão clara e prática de como este filtro pode ser utilizado em diferentes cenários.
+
 
 ## 5º filtro:
 

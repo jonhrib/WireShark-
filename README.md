@@ -123,7 +123,8 @@ ABRIR O TERMINAL COMO ADMINISTADOR
 EXECUTAR O SEGUINTE COMANDO PARA ESCANEAR AS PORTAS DO LOCALHOST:
 
     nmap 127.0.0.1
-    ou
+ou
+    
     nmap localhost
 
 ### 3. ABRIR UMA NOVA PORTA NO LOCALHOST
@@ -150,7 +151,7 @@ Uso:
 
 ## filtro extra: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦
 
-
+## 
 Links úteis:
 
 1. https://nmap.org/download.html

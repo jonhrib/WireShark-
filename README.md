@@ -140,7 +140,7 @@ NA ABA DO TERMINAL QUE USAMOS O NMAP, EXECUTAR O SEGUINTE COMANDO PARA CRIAR UMA
 
     ncat 127.0.0.1 nº_da_porta
 
-### 5.VERIFICAR O WIRESHARK, COM O FILTRO 6
+### 5. VERIFICAR O WIRESHARK, COM O FILTRO 6
 
 A PORTA 1001 DEVERÁ APARECER SENDO USADA EM ALGUM PROTOCOLO TCP!!!
 
@@ -150,6 +150,22 @@ Uso:
 
 
 ## filtro extra: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦
+
+Teoria:
+
+- TLS (Transport Layer Security): É um protocolo criptográfico que fornece comunicação segura pela rede. É amplamente utilizado para proteger a comunicação na internet, incluindo HTTPS.
+
+- Handshake TLS: O handshake é o processo inicial de estabelecimento de uma conexão TLS. Durante este processo, o cliente e o servidor negociam parâmetros de segurança, trocam chaves e autenticam um ao outro.
+
+- Extensão SNI (Server Name Indication): A SNI é uma extensão do protocolo TLS que permite que o cliente informe ao servidor o nome do host ao qual ele está tentando se conectar no início do handshake TLS. Isso permite que o servidor utilize certificados diferentes para diferentes nomes de host.
+
+Funcionamento:
+
+- Este filtro funciona analisando os pacotes de handshake do protocolo TLS (Transport Layer Security) e verificando se a extensão SNI (Server Name Indication) contém a string "amazon.com". Durante o processo de handshake, o cliente inclui a extensão SNI na mensagem ClientHello para informar ao servidor o nome do host desejado. O Wireshark utiliza este filtro para exibir apenas os pacotes que contêm "amazon.com" na extensão SNI, permitindo a identificação de conexões TLS estabelecidas com o servidor específico.
+
+Uso:
+
+- O filtro tls.handshake.extensions_server_name contains "amazon.com" no Wireshark é uma ferramenta poderosa para identificar e analisar pacotes de handshake TLS que utilizam a extensão SNI para se conectar a um servidor específico. Este filtro permite que você monitore e audite conexões seguras em uma rede, fornecendo insights valiosos sobre o tráfego HTTPS e a segurança da comunicação.
 
 ## 
 Links úteis:

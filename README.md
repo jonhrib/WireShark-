@@ -156,4 +156,4 @@ Links úteis:
 
 1. https://nmap.org/download.html
    
-3. https://www.youtube.com/watch?v=KrNWKxLk5No
+3. Video que ensino os passos do filtro 6: https://www.youtube.com/watch?v=KrNWKxLk5No

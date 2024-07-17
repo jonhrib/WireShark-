@@ -97,4 +97,4 @@ ncat 127.0.0.1 1001 (para fechar a porta)
 
 3. https://www.youtube.com/watch?v=KrNWKxLk5No
 
-## paiKlebiº filtro: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦
+## filtro extra: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦

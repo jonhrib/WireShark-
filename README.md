@@ -70,8 +70,6 @@ Uso:
 
 ## 4º filtro: tcp.analysis.retransmission
 
-Teoria:
-
 Funcionamento:
 
 - O TCP é um protocolo de transporte confiável que garante a entrega de dados na ordem correta. Para fazer isso, ele usa um mecanismo de confirmação (ACK) para garantir que os pacotes foram recebidos corretamente.
@@ -84,17 +82,77 @@ Uso:
 
 ## 5º filtro: frame contains "attachment" or frame contains "pdf"
 
+Teoria:
+
+- O filtro frame contains não se limita a um protocolo específico. Ele procura por uma string de texto dentro do conteúdo de qualquer quadro (frame) capturado. Isso significa que pode ser aplicado a qualquer pacote de rede, independentemente do protocolo.
+
+Funcionamento:
+
+- Wireshark captura todo o tráfego de rede que passa pela interface de rede selecionada.
+- O filtro frame contains procura dentro do conteúdo de cada quadro capturado para verificar se ele contém a string especificada.
+
+Uso:
+
+- Este filtro pode ser usado para monitorar anexos de email, transferências de arquivos PDF e para fins de segurança da rede. Ao aplicá-lo, você pode obter insights valiosos sobre o tráfego de rede e detectar atividades específicas relacionadas a anexos e arquivos PDF.
+
 ## 6º filtro: ip.addr==127.0.0.1 (abertura e visualização de portas)
 
-nmap 127.0.0.1 ou nmap localhost
+Teoria e Funcionamento:
 
-ncat -l 1001 (para abrir a porta 1001)
-ncat 127.0.0.1 1001 (para fechar a porta)
+- Utilizado no Wireshark para identificar pacotes cujo endereço IP de origem ou destino é 127.0.0.1, também conhecido como o endereço de loopback ou localhost. Este endereço é usado para testes e diagnósticos dentro do próprio dispositivo.
 
-1. https://nmap.org/download.html
+Teste:
 
-2. https://get-site-ip.com
+- Para utilizar este filtro e testar suas funcionalidades reais, podemos seguir os seguintes passos:
 
-3. https://www.youtube.com/watch?v=KrNWKxLk5No
+  1. Baixar e instalar o Nmap (Network Mapper);
+  2. Executar o Nmap para escanear as portas do localhost;
+  3. Abrir uma nova porta no localhost;
+  4. Fechar essa porta criada;
+  5. Verificar o Wireshark, com o filtro 6.
+ 
+### 1. BAIXAR E INSTALAR O NMAP
+
+ACESSAR https://nmap.org/download.html
+BAIXAR A VERSÃO COMPATÍVEL COM SEU SISTEMA OPERACIONAL
+INSTALAR DE ACORDO COM AS INSTRUÇÕES DO SITE OFICIAL
+
+### 2. EXECUTAR O NMAP PARA ESCANEAR AS PORTAS DO LOCALHOST
+
+ABRIR O TERMINAL COMO ADMINISTADOR
+EXECUTAR O SEGUINTE COMANDO PARA ESCANEAR AS PORTAS DO LOCALHOST:
+
+    nmap 127.0.0.1
+    ou
+    nmap localhost
+
+### 3. ABRIR UMA NOVA PORTA NO LOCALHOST
+
+ABRIR OUTRA ABA DO TERMINAL, COMO ADMINISTADOR
+EXECUTAR O SEGUINTE COMANDO PARA CRIAR UMA NOVA PORTA NO LOCALHOST:
+
+    ncat -l nº_da_porta
+
+### 4. FECHAR ESSA PORTA CRIADA
+
+NA ABA DO TERMINAL QUE USAMOS O NMAP, EXECUTAR O SEGUINTE COMANDO PARA CRIAR UMA NOVA PORTA NO LOCALHOST:
+
+    ncat 127.0.0.1 nº_da_porta
+
+### 5.VERIFICAR O WIRESHARK, COM O FILTRO 6
+
+A PORTA 1001 DEVERÁ APARECER SENDO USADA EM ALGUM PROTOCOLO TCP!!!
+
+Uso:
+
+- O filtro ip.addr == 127.0.0.1 no Wireshark é útil para capturar e analisar pacotes de loopback, permitindo que você examine a comunicação interna no dispositivo.
+
 
 ## filtro extra: tls.handshake.extensions_server_name contains "amazon.com" 👨‍👦
+
+
+Links úteis:
+
+1. https://nmap.org/download.html
+   
+3. https://www.youtube.com/watch?v=KrNWKxLk5No
